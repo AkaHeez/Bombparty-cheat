@@ -4,7 +4,7 @@ PATH = f"https://jklm.fun/{code}"
 
 USER = "Username here, anything works"
 FILEPATH = r"Right click the words.txt and then copy as path and paste it in here"
-
+AMOUNTOFWORDS = 15 #This is the amount of words it prints out for u on the side
 
 
 
@@ -21,7 +21,7 @@ def promptCheck(words, prompt):
     print(prompt)
     for word in words:
         if prompt in word:
-            if counter < 15:
+            if counter < AMOUNTOFWORDS:
                 print(word)
                 counter += 1
             else:
